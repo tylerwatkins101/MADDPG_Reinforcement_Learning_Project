@@ -36,5 +36,22 @@ The project was done using python 3 and has the following library dependencies t
 
 To run the code and train the model yourself you'll need to download the Unity environment as well Tennis.ipynb, model.py, and ddpg_agent.py from this repository.
 
+Follow the instructions below to activate the unity environment on your machine.
+
+(For Windows users) The ML-Agents toolkit supports Windows 10. While it might be possible to run the ML-Agents toolkit using other versions of Windows, it has not been tested on other versions. Furthermore, the ML-Agents toolkit has not been tested on a Windows VM such as Bootcamp or Parallels.
+
+Download the Unity Environment
+For this project, you will not need to install Unity - this is because we have already built the environment for you, and you can download it from one of the links below. You need only select the environment that matches your operating system:
+
+Linux: click here
+Mac OSX: click here
+Windows (32-bit): click here
+Windows (64-bit): click here
+Then, place the file in the p3_collab-compet/ folder in the DRLND GitHub repository, and unzip (or decompress) the file.
+
+(For Windows users) Check out this link if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
+
+(For AWS) If you'd like to train the agent on AWS (and have not enabled a virtual screen), then please use this link to obtain the "headless" version of the environment. You will not be able to watch the agent without enabling a virtual screen, but you will be able to train the agent. (To watch the agent, you should follow the instructions to enable a virtual screen, and then download the environment for the Linux operating system above.)
+
 Open the Tennis.ipynb jupyter notebook in your browser and run the code cells from top to bottom. In the notebook you'll see a visualization of the agent learning the task and after the agent has scored an average of at least +0.5 over 100 consecutive episodes the agent's model parameters will be saved to a .pth file.
 
