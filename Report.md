@@ -53,7 +53,7 @@ MADDPG extends DDPG even further toinclude multiple agents. Uses multiple agents
 
 ## Plot of Rewards
 
-Here we see a plot of rewards per training episode to illustrate that the agent is able to receive an average reward (over 100 episodes) of at least +30. The environment was solved in less than 222 episodes.
+Here we see a plot of rewards per training episode to illustrate that the agent is able to receive an average reward (over 100 episodes) of at least +0.5. The environment was solved in 2311 episodes.
 
 
 ![reward_plot](photos/MADDPG_Plot.png)
