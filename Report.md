@@ -77,3 +77,6 @@ information is contained in x) with the number of agents N. This could be remedi
 for example, having a modular Q function that only considers agents in a certain neighborhood of a
 given agent. We leave this investigation to future work."
 
+## References
+
+[Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf)
