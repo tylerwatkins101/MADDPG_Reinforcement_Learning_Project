@@ -4,9 +4,15 @@ The learning algorithm used to train the agent was a Multi-Agent Deep Determinis
 
 Deep deterministic policy gradient (DDPG) is a variant of DPG where the policy and critic Q are approximated with deep neural networks. DDPG is an off-policy algorithm, and samples trajectories from a replay buffer of experiences that are stored throughout training. DDPG also makes use of a target network, as in DQN.
 
-MADDPG extends DDPG even further toinclude multiple agents. Uses multiple agents to develop the critic network while relying on it's own actions to build the Actor network.
+MADDPG is a simple extensionn of DDPG where the critic is augmented with extra information about the policies of other agents while the actor only has access to local information. This framework adopts the use of the centralized training with the decentralized execution. This allows the policies to use extra information to ease training but this information is not used at test time. The primary motivation behind MADDPG is that, if the actions taken by all agents are known, then the environment is stationary even as the policies change.
 
+MADDPG is comprised of two phases as shown in the diagram below:
 
+- Training phase: During training, the critic for each agent uses extra information like state's observed and actions taken by all the other agents. As for the actor, each actor has access to only its agent's observation and actions.
+
+- Execution phase: After training is completed, only the local actors are used at execution phase, acting in a decentralized manner and equally applicable in cooperative and competitive settings. Learning critic for each agent allows us to use a different reward structure for each. Hence the algorithm can be used in all cooperative, competitive, and mixed scenarios.
+
+![diagram](photos/MADDPG_diagram.png)
 
 #### The Model Architecture for the Actor Network:
 
