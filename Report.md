@@ -14,7 +14,7 @@ MADDPG is comprised of two phases as shown in the diagram below:
 
 ![diagram](photos/MADDPG_diagram.png)
 
-## The Model Architecture for the Actor Network:
+## The Model Architecture for the Actor Network
 
 - State Space Size (24), Action Space Size (2)
 
@@ -27,7 +27,7 @@ MADDPG is comprised of two phases as shown in the diagram below:
 - Linear Layer 3 (inputs = 128, outputs = 2)
 - Tanh Activation Function
 
-## The Model Architecture for the Critic Network:
+## The Model Architecture for the Critic Network
 
 - State Space Size (24 * 2) # 2 agents, Action Space Size (2 * 2) # 2 agents
 
@@ -40,7 +40,7 @@ MADDPG is comprised of two phases as shown in the diagram below:
 - Leaky Relu Activation Function
 - Linear Layer 3 (inputs = 128, outputs = 1)
 
-## The Hyperparameters:
+## The Hyperparameters
 
 - BUFFER_SIZE = int(1e5)  # replay buffer size
 - BATCH_SIZE = 128        # minibatch size
